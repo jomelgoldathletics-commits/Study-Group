@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Nordic Study Cafe</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="hero">
+    <nav>
+      <div class="logo">Nordic Study Cafe</div>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#menu">Menu</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#reservation">Reserve</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="hero-content">
+      <h1>Welcome to the Nordic Study Cafe</h1>
+      <p>Cozy. Minimal. Inspiring.</p>
+    </div>
+  </header>
+
+  <section id="about" class="section">
+    <h2>About Us</h2>
+    <p>
+      A serene space inspired by Nordic design — perfect for studying, reading, and relaxing. Enjoy our specialty drinks, Scandinavian pastries, and tranquil atmosphere.
+    </p>
+  </section>
+
+  <section id="menu" class="section alt-bg">
+    <h2>Menu Highlights</h2>
+    <ul class="menu-list">
+      <li>☕ Nordic Brewed Coffee</li>
+      <li>🍵 Matcha Latte</li>
+      <li>🥐 Cardamom Bun</li>
+      <li>🍯 Honey Oat Latte</li>
+      <li>🥖 Smørrebrød (Open Sandwich)</li>
+    </ul>
+  </section>
+
+  <section id="gallery" class="section">
+    <h2>Gallery</h2>
+    <div class="gallery">
+      <img src="https://images.unsplash.com/photo-1464983953574-0892a716854b?auto=format&fit=crop&w=500&q=80" alt="Cafe Interior">
+      <img src="https://images.unsplash.com/photo-1432888498266-38ffec3eaf0a?auto=format&fit=crop&w=500&q=80" alt="Coffee">
+      <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=500&q=80" alt="Pastry">
+    </div>
+  </section>
+
+  <section id="reservation" class="section">
+    <h2>Reserve a Spot</h2>
+    <form id="reservationForm">
+      <div class="form-row">
+        <label for="resName">Name</label>
+        <input type="text" id="resName" name="name" required>
+      </div>
+      <div class="form-row">
+        <label for="resEmail">Email</label>
+        <input type="email" id="resEmail" name="email" required>
+      </div>
+      <div class="form-row">
+        <label for="resDate">Date</label>
+        <input type="date" id="resDate" name="date" required>
+      </div>
+      <div class="form-row">
+        <label for="resTime">Time</label>
+        <input type="time" id="resTime" name="time" required>
+      </div>
+      <div class="form-row">
+        <label for="resPeople">Number of People</label>
+        <input type="number" id="resPeople" name="people" min="1" max="8" required>
+      </div>
+      <button type="submit">Reserve</button>
+      <div id="reservationMsg"></div>
+    </form>
+  </section>
+
+  <section id="contact" class="section alt-bg">
+    <h2>Contact</h2>
+    <p>Email: contact@nordiccafe.com</p>
+    <p>Instagram: @nordiccafe</p>
+    <p>Location: 123 Nordic Lane, Cozy City</p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Nordic Study Cafe</p>
+  </footer>
+
+  <!-- Chat Widget -->
+  <div class="chat-widget" id="chatWidget">
+    <div class="chat-header" id="chatHeader">Chat with us!</div>
+    <div class="chat-body" id="chatBody"></div>
+    <form class="chat-input-row" id="chatForm">
+      <input type="text" id="chatInput" placeholder="Type your message..." required autocomplete="off"/>
+      <button type="submit">Send</button>
+    </form>
+  </div>
+  <button class="chat-toggle-btn" id="chatToggleBtn">💬</button>
+  <script src="script.js"></script>
+</body>
+</html>
